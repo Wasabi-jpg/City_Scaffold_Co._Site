@@ -129,6 +129,10 @@ footer {
     font-size: clamp(1rem, 3vh + 1vw, 1.5rem);
 }
 
+.service h2 a{
+    color: #dbdbdb;
+}
+
 #debris_chute{
     width: 112px;
     height: 200px;
@@ -140,6 +144,24 @@ footer {
     margin-right: auto;
     height: 80vh;
     width: 60vh;
+}
+
+/* For Service Gallery */
+.service_img_gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2vh;
+}
+
+.service_img_gallery .service_img_card img{
+    width: 100%;       /* Fill the width of the card */
+            
+    /* THIS IS THE KEY PROPERTY: */
+    object-fit: cover; /* Crops the image to fit the box without stretching */
+    aspect-ratio: 4 / 3;
+            
+    display: block;
+    border: 1px solid #999;
 }
 
 /* For Contact Page */
