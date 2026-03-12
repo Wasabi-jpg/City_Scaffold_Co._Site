@@ -115,35 +115,45 @@ footer {
 /* For service page */
 .services_provided{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto; /* might not need */
+    gap: 1vw;
 }
 
 .service{
-    width: 25%;
-    /* height: 25%; */
-    
+    /* width:50%; */
+    background: #f0f0f0;
+    border: 2px solid #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    width: 100%;
 }
 
 .service h2{
-    font-size: clamp(1rem, 3vh + 1vw, 1.5rem);
+    /* font-size: clamp(1rem, 0.5vh + 0.5vw, 1.5rem); */
+    font-size: 1vw;
 }
 
 .service h2 a{
     color: #030303;
 }
 
-#debris_chute{
+/* #debris_chute{
     width: 112px;
     height: 200px;
-}
+} */
 
 .placeholder_img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 80vh;
-    width: 60vh;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    flex-grow: 1;
+    
 }
 
 /* For Service Gallery */
