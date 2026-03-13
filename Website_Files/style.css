@@ -115,7 +115,7 @@ footer {
 /* For service page */
 .services_provided{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto; /* might not need */
     gap: 1vw;
 }
